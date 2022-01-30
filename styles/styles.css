@@ -676,20 +676,32 @@ margin-bottom: 3%;
     
     }
 
-    .menu {
-        transition: all 0.2s;
-        margin: 40px
-    
+    .menu li {
+        -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
     
-    .menu a:hover {
-        width: 20%;
-        height: 20%;
-        background-color: #fba8a4;
-        background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
-        color:#152037;
-        border-radius: 50%;
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
     }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
     #seccionPrincipal {
         width: 100%;
         font-size: large;
