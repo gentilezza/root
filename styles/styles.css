@@ -128,7 +128,6 @@ footer {grid-area: footer; }
 
     #logoHome {
     width: 200px;  
-
     }
     .principal {
         background-image: url(../assets/background.jpg);
@@ -186,9 +185,8 @@ footer {grid-area: footer; }
         margin: auto;
     }
     .bannerSeccion {
-        background-color: #ffd7cd;
-        font-size: large;
-        color: white;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,0.5690651260504201) 0%, rgba(255,215,205,1) 50%);        color: white;
         text-align: center;
         text-transform: uppercase;
         height: 50px;
@@ -439,8 +437,8 @@ margin-bottom: 3%;
     color: grey;
 }
 .bannerSeccion {
-    background-color: #ffd7cd;
-    color: white;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5690651260504201) 0%, rgba(255,215,205,1) 50%);    color: white;
     text-transform: uppercase;
     height: 100px;
     display: flex;
@@ -533,7 +531,8 @@ margin-bottom: 3%;
     color: grey;
 }
 .bannerSeccion {
-    background-color: #ffd7cd;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5690651260504201) 0%, rgba(255,215,205,1) 50%);
     color: white;
     text-transform: uppercase;
     height: 100px;
@@ -616,6 +615,39 @@ margin-bottom: 3%;
         width: 150px;
         float: left;
     }
+    .avatar {
+        -webkit-animation: rotate-scale-down-diag-2 0.7s linear both;
+                animation: rotate-scale-down-diag-2 0.7s linear both;
+    }
+@-webkit-keyframes rotate-scale-down-diag-2 {
+    0% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+              transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+  }
+  @keyframes rotate-scale-down-diag-2 {
+    0% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+              transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+  }
+  
     #homeBanner {
         background-color: #152037;
         text-transform: uppercase;
@@ -642,6 +674,33 @@ margin-bottom: 3%;
         color: #ffd7cd;
     
     }
+
+    .menu li {
+        -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
     #seccionPrincipal {
         width: 100%;
         font-size: large;
@@ -666,6 +725,33 @@ margin-bottom: 3%;
         height: 200px;
         padding-top: 20px;
     }
+
+    #logoHome {
+        -webkit-animation: rotate-center 0.6s ease-in-out both;
+                animation: rotate-center 0.6s ease-in-out both;
+    }
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+    
     .principal {
         background-image: url(../assets/background.jpg);
     }
@@ -744,7 +830,8 @@ margin-bottom: 3%;
             color: grey;
         }
 .bannerSeccion {
-    background-color: #ffd7cd;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5690651260504201) 0%, rgba(255,215,205,1) 50%);
     color: white;
     text-transform: uppercase;
     height: 100px;
@@ -814,6 +901,27 @@ margin-bottom: 3%;
         align-content: center;
         }
 
+        .angelines img {
+            transition: all 0.5s;
+        }
+        .angelines img:hover {
+            width: 600px;
+            height: 600px;
+        }
+        .magnolias img {
+            transition: all 0.5s;
+        }
+        .magnolias img:hover {
+            width: 650px;
+            height: 600px;
+        }
+        .pieles img {
+            transition: all 0.5s;
+        }
+        .pieles img:hover {
+            width: 600px;
+            height: 600px;
+        }
         .nuestrosClientes img {
             width: 350px;
             height: 350px;
