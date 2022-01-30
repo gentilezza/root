@@ -128,7 +128,6 @@ footer {grid-area: footer; }
 
     #logoHome {
     width: 200px;  
-
     }
     .principal {
         background-image: url(../assets/background.jpg);
@@ -186,9 +185,8 @@ footer {grid-area: footer; }
         margin: auto;
     }
     .bannerSeccion {
-        background-color: #ffd7cd;
-        font-size: large;
-        color: white;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,0.5690651260504201) 0%, rgba(255,215,205,1) 50%);        color: white;
         text-align: center;
         text-transform: uppercase;
         height: 50px;
@@ -439,8 +437,8 @@ margin-bottom: 3%;
     color: grey;
 }
 .bannerSeccion {
-    background-color: #ffd7cd;
-    color: white;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5690651260504201) 0%, rgba(255,215,205,1) 50%);    color: white;
     text-transform: uppercase;
     height: 100px;
     display: flex;
@@ -533,7 +531,8 @@ margin-bottom: 3%;
     color: grey;
 }
 .bannerSeccion {
-    background-color: #ffd7cd;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5690651260504201) 0%, rgba(255,215,205,1) 50%);
     color: white;
     text-transform: uppercase;
     height: 100px;
@@ -831,7 +830,8 @@ margin-bottom: 3%;
             color: grey;
         }
 .bannerSeccion {
-    background-color: #ffd7cd;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5690651260504201) 0%, rgba(255,215,205,1) 50%);
     color: white;
     text-transform: uppercase;
     height: 100px;
